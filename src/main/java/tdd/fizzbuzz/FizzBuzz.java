@@ -16,6 +16,9 @@ public class FizzBuzz {
         if (count % THREE == 0 && count % FIVE == 0){
             return FIZZ_BUZZ;
         }
+        if (count % FIVE == 0 && count % SEVEN == 0){
+            return "BuzzWhizz";
+        }
         if (count % THREE == 0) {
             return FIZZ;
         }
