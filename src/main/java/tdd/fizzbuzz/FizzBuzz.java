@@ -13,7 +13,7 @@ public class FizzBuzz {
 
     public String countOff(int count) {
         if (count % THREE == 0 && count % FIVE == 0 && count % SEVEN == 0){
-            return "FizzBuzzWhizz";
+            return FIZZ + BUZZ + WHIZZ;
         }
         if (count % THREE == 0 && count % FIVE == 0){
             return FIZZ + BUZZ;
