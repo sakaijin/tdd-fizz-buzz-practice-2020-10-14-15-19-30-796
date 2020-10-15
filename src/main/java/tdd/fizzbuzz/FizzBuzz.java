@@ -12,10 +12,10 @@ public class FizzBuzz {
     private static final String WHIZZ = "Whizz";
 
     public String countOff(int count) {
-        if (isAMultipleOf(count, THREE) && isAMultipleOf(count, FIVE) && isAMultipleOf(count, SEVEN)){
+        if (isAMultipleOf3and5(count) && isAMultipleOf(count, SEVEN)){
             return FIZZ + BUZZ + WHIZZ;
         }
-        if (isAMultipleOf(count, THREE) && isAMultipleOf(count, FIVE)){
+        if (isAMultipleOf3and5(count)){
             return FIZZ + BUZZ;
         }
         if (isAMultipleOf(count, FIVE) && isAMultipleOf(count, SEVEN)){
@@ -34,6 +34,10 @@ public class FizzBuzz {
             return WHIZZ;
         }
         return valueOf(count);
+    }
+
+    private boolean isAMultipleOf3and5(int count) {
+        return isAMultipleOf(count, THREE) && isAMultipleOf(count, FIVE);
     }
 
     private boolean isAMultipleOf(int count, int specialNumber) {
