@@ -19,7 +19,7 @@ public class FizzBuzz {
             return BUZZ + WHIZZ;
         }
         if (count % THREE == 0 && count % SEVEN == 0){
-            return "FizzWhizz";
+            return FIZZ + WHIZZ;
         }
         if (count % THREE == 0) {
             return FIZZ;
