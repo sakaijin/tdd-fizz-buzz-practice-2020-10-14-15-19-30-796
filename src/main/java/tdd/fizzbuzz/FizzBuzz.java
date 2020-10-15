@@ -2,6 +2,6 @@ package tdd.fizzbuzz;
 
 public class FizzBuzz {
     public String countOff(int count) {
-        return null;
+        return String.valueOf(count);
     }
 }
