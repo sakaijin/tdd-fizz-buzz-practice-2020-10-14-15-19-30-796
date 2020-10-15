@@ -26,4 +26,11 @@ public class FizzBuzzTest {
         String actual = fizzBuzz.countOff(5);
         assertEquals("Buzz", actual);
     }
+
+    @Test
+    void should_fizzBuzz_when_countOff_given_multiple_of_7_return_Whizz() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String actual = fizzBuzz.countOff(14);
+        assertEquals("Whizz", actual);
+    }
 }
