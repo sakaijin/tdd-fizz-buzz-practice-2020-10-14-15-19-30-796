@@ -10,10 +10,11 @@ public class FizzBuzz {
     private static final String FIZZ = "Fizz";
     private static final String BUZZ = "Buzz";
     private static final String WHIZZ = "Whizz";
+    private static final String FIZZ_BUZZ = "FizzBuzz";
 
     public String countOff(int count) {
         if (count % THREE == 0 && count % FIVE == 0){
-            return "FizzBuzz";
+            return FIZZ_BUZZ;
         }
         if (count % THREE == 0) {
             return FIZZ;
