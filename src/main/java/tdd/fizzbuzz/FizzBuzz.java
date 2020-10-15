@@ -16,6 +16,9 @@ public class FizzBuzz {
         if (count % FIVE == 0){
             return BUZZ;
         }
+        if (count % 7 == 0){
+            return "Whizz";
+        }
         return valueOf(count);
     }
 }
