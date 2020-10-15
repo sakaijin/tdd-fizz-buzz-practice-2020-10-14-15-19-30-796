@@ -11,6 +11,9 @@ public class FizzBuzz {
         if (count % THREE == 0 ){
             return FIZZ;
         }
+        if (count % 5 == 0){
+            return "Buzz";
+        }
         return valueOf(count);
     }
 }
