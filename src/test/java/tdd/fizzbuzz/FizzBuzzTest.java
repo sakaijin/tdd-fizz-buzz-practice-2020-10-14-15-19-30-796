@@ -19,4 +19,11 @@ public class FizzBuzzTest {
         String actual = fizzBuzz.countOff(3);
         assertEquals("Fizz", actual);
     }
+
+    @Test
+    void should_fizzBuzz_when_countOff_given_multiple_of_5_return_Buzz() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String actual = fizzBuzz.countOff(5);
+        assertEquals("Buzz", actual);
+    }
 }
