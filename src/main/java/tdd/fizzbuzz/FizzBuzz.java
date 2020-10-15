@@ -12,6 +12,9 @@ public class FizzBuzz {
     private static final String WHIZZ = "Whizz";
 
     public String countOff(int count) {
+        if (count % THREE == 0 && count % FIVE == 0){
+            return "FizzBuzz";
+        }
         if (count % THREE == 0) {
             return FIZZ;
         }
