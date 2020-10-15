@@ -12,27 +12,31 @@ public class FizzBuzz {
     private static final String WHIZZ = "Whizz";
 
     public String countOff(int count) {
-        if (count % THREE == 0 && count % FIVE == 0 && count % SEVEN == 0){
+        if (isAMultipleOf(count, THREE) && isAMultipleOf(count, FIVE) && isAMultipleOf(count, SEVEN)){
             return FIZZ + BUZZ + WHIZZ;
         }
-        if (count % THREE == 0 && count % FIVE == 0){
+        if (isAMultipleOf(count, THREE) && isAMultipleOf(count, FIVE)){
             return FIZZ + BUZZ;
         }
-        if (count % FIVE == 0 && count % SEVEN == 0){
+        if (isAMultipleOf(count, FIVE) && isAMultipleOf(count, SEVEN)){
             return BUZZ + WHIZZ;
         }
-        if (count % THREE == 0 && count % SEVEN == 0){
+        if (isAMultipleOf(count, THREE) && isAMultipleOf(count, SEVEN)){
             return FIZZ + WHIZZ;
         }
-        if (count % THREE == 0) {
+        if (isAMultipleOf(count, THREE)) {
             return FIZZ;
         }
-        if (count % FIVE == 0) {
+        if (isAMultipleOf(count, FIVE)) {
             return BUZZ;
         }
-        if (count % SEVEN == 0) {
+        if (isAMultipleOf(count, SEVEN)) {
             return WHIZZ;
         }
         return valueOf(count);
+    }
+
+    private boolean isAMultipleOf(int count, int specialNumber) {
+        return count % specialNumber == 0;
     }
 }
